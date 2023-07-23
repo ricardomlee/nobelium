@@ -1,9 +1,9 @@
 const BLOG = {
-  title: 'CRAIGARY',
-  author: 'Craig Hart',
-  email: 'i@craigary.net',
-  link: 'https://nobelium.vercel.app',
-  description: 'This gonna be an awesome website.',
+  title: 'Ric\'s Blog',
+  author: 'Ric Li',
+  email: 'ricardomlee@gmail.com',
+  link: 'https://ricli.link',
+  description: 'TTG awesome site.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -13,7 +13,7 @@ const BLOG = {
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
   since: 2021, // If leave this empty, current year will be used.
   postsPerPage: 7,
-  sortByDate: false,
+  sortByDate: true,
   showAbout: true,
   showArchive: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
@@ -38,7 +38,7 @@ const BLOG = {
   },
   comment: {
     // support provider: gitalk, utterances, cusdis
-    provider: '', // leave it empty if you don't need any comment plugin
+    provider: 'utterances', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
       repo: '', // The repository of store comments
       owner: '',
@@ -48,7 +48,7 @@ const BLOG = {
       distractionFreeMode: false
     },
     utterancesConfig: {
-      repo: ''
+      repo: 'ricardomlee/utterances'
     },
     cusdisConfig: {
       appId: '', // data-app-id
